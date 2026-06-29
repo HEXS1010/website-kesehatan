@@ -1,0 +1,103 @@
+:root {
+  /* color hijau */
+  --green-50: #edfff6;
+  --green-100: #d5ffec;
+  --green-200: #aeffdb;
+  --green-300: #70ffc0;
+  --green-400: #2bfda2;
+  --green-500: #00ff91;
+  --green-600: #00c06d;
+  --green-700: #009656;
+  --green-800: #067546;
+  --green-900: #07603c;
+  --green-950: #003722;
+
+  /* font */
+  --title: "Plus Jakarta Sans", sans-serif;
+  --title2: "Manrope", sans-serif;
+  --desc: "Inter", sans-serif;
+
+  /* fungsinya */
+  --bg: var(--green-50);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding-inline: 5rem;
+  padding-block: 20px;
+  /* height: 100px; */
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  /* background: #fffcfc; */
+}
+
+.logo {
+  font-size: 28px;
+  line-height: 32px;
+  font-family: var(--title2);
+  font-weight: 700;
+}
+
+.logo > span {
+  color: var(--green-700);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-items {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: var(--desc);
+  /* color: rgb(72, 89, 86); */
+  color: var(--green-950);
+}
+
+.nav-btn {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 10px 21px;
+  background: var(--green-300);
+  border: none;
+  border-radius: 12px;
+  font-family: var(--desc);
+  font-weight: 500;
+  font-size: 16px;
+}
