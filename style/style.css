@@ -44,6 +44,7 @@ ul {
   list-style: none;
 }
 
+/* ====== Navbar ========== */
 .navbar {
   width: 100%;
 }
@@ -100,4 +101,55 @@ ul {
   font-family: var(--desc);
   font-weight: 500;
   font-size: 16px;
+}
+
+/* ====== Hero ========== */
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.desc-top {
+  margin-bottom: 10px;
+  font-family: var(--desc);
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.desc-top > span {
+  color: #f9fffb;
+  padding: 5px 10px;
+  background: var(--green-600);
+}
+
+.title {
+  max-width: 700px;
+  font-family: var(--title);
+  font-weight: 700;
+  font-size: 56px;
+}
+
+.title > span {
+  color: var(--green-700);
+}
+
+.desc-bottom {
+  max-width: 600px;
+  margin-top: 21px;
+  font-family: var(--desc);
+  font-size: 14px;
+}
+
+
+.hero-search {
+    margin-top: 37px;
 }
