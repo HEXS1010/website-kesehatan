@@ -78,8 +78,8 @@ ul {
 
 .container {
   width: 100%;
+  height: 80px;
   padding-inline: 5rem;
-  padding-block: 20px;
   /* height: 100px; */
   display: flex;
   top: 0;
@@ -133,14 +133,17 @@ ul {
 /* ====== Hero ========== */
 .hero {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 80px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 5rem;
+  border: 2px solid black;
 }
 
+/* ========== Hero content ========= */
 .hero-content {
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -160,7 +163,7 @@ ul {
 }
 
 .title {
-  max-width: 700px;
+  max-width: 640px;
   font-family: var(--title);
   font-weight: 700;
   font-size: 56px;
@@ -172,12 +175,13 @@ ul {
 }
 
 .desc-bottom {
-  max-width: 600px;
+  max-width: 590px;
   margin-top: 21px;
   font-family: var(--desc);
   font-size: 14px;
   font-weight: 400;
   color: var(--netral-700);
+  line-height: 1.5;
 }
 
 .hero-search {
@@ -265,3 +269,43 @@ ul {
   font-weight: 500;
   line-height: 1.2;
 }
+
+/* =========== gambar hero ============ */
+.hero-img {
+  flex: 1;
+  width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.hero-img img {
+  width: 120%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.bg-icon {
+  position: absolute;
+  font-size: 400px;
+  color: var(--green-800);
+  opacity: 0.09;
+  z-index: 1;
+  left: 70%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+/* .bg-icon2 {
+  position: absolute;
+  font-size: 600px;
+  color: var(--green-800);
+  opacity: 0.09;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+} */
