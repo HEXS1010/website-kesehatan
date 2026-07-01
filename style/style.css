@@ -600,6 +600,7 @@ ul {
 }
 
 .box {
+  position: relative;
   overflow: hidden;
   border-radius: 20px;
 }
@@ -610,6 +611,55 @@ ul {
   object-fit: cover;
   display: block;
   transition: 0.4s;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.2),
+    transparent
+  );
+  opacity: 0;
+  transition: 0.35s ease;
+
+  z-index: 1;
+}
+
+.box::before {
+  opacity: 1;
+}
+
+.box > figcaption {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: white;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.35s ease;
+}
+
+.box figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.box > figcaption > h5 {
+  font-family: var(--title);
+  font-weight: 600;
+  font-size: larger;
+}
+
+.box > figcaption > p {
+  font-family: var(--desc);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 /* media query */
