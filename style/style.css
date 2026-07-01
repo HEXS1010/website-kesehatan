@@ -56,7 +56,7 @@
 
 html {
   scroll-behavior: smooth;
-   overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -75,7 +75,6 @@ ul {
 /* ====== Navbar ========== */
 .navbar {
   width: 100%;
-  z-index: 100;
 }
 
 .container {
@@ -89,7 +88,8 @@ ul {
   left: 0;
   justify-content: space-between;
   align-items: center;
-  /* background: #fffcfc; */
+  background: #fffcfc;
+  z-index: 100;
 }
 
 .logo {
@@ -131,6 +131,17 @@ ul {
   font-family: var(--desc);
   font-weight: 500;
   font-size: 16px;
+}
+
+/* ======= scroll line navabr ======== */
+.scroll-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2.5px;
+  background: var(--green-700);
+  transition: width 0.1s linear;
 }
 
 /* ====== Hero ========== */
@@ -302,27 +313,58 @@ ul {
   transform: translate(-50%, -50%);
 }
 
+.bg2-icon {
+  position: absolute;
+  font-size: 600px;
+  color: var(--green-500);
+  opacity: 0.04;
+  z-index: 1;
+  left: 5%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* ========== */
+.random {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ============== */
+
 /* ============ dokter team =============== */
 .team {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-inline: 5rem;
+  padding-inline: 9rem;
   flex-direction: column;
+  background: var(--netral-100);
+  gap: 4rem;
 }
 
 .team-head {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 9px;
+  margin-top: 5rem;
+  gap: 10px;
 }
 
 .team-head > h2 {
-  margin-top: 60px;
+  /* margin-top: 7rem; */
   font-family: var(--title);
   font-weight: 900;
   font-size: 45px;
+}
+
+.span-title {
+  padding: 2px 7px;
+  border-radius: 9px;
+  color: var(--netral-900);
+  background: var(--green-300);
 }
 
 .team-head > p {
@@ -332,12 +374,13 @@ ul {
   line-height: 1.5;
 }
 
+/* ======= random angka ======== */
 .doctor-stats {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20rem;
-  margin-top: 5rem;
+  gap: 12rem;
+  /* margin-top: 5rem; */
 }
 
 .stat-card {
@@ -345,12 +388,20 @@ ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  /* background: var(--blue-100); */
+  /* padding: 20px 20px; */
+  /* border: 1px solid var(--netral-300); */
+  gap: 10px;
+}
+
+.stat-card > i {
+  font-size: 22px;
 }
 
 .stat-card > h3 {
   font-family: var(--title);
   font-weight: 600;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .stat-card > p {
@@ -360,7 +411,6 @@ ul {
 }
 
 .team-img {
-  flex: 1;
   width: 100%;
   height: 100%;
   display: flex;
@@ -370,6 +420,6 @@ ul {
 }
 
 .team-img > img {
-  width: 1500px;
+  width: 110%;
   height: auto;
 }
