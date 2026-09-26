@@ -682,7 +682,7 @@ ul {
   border-radius: 28px;
   text-align: center;
   background: var(--green-300);
-  box-shadow: 0 16px 34px -22px var(--green-800);
+  box-shadow: 0 10px 34px -20px var(--green-800);
 }
 
 /* ============ isi banner ============== */
