@@ -48,6 +48,13 @@
   --bg: var(--green-50);
 }
 
+/* ==== container ==== */
+.container {
+  max-width: min(100% - 40%, 12000px);
+  margin-inline: auto;
+}
+
+
 * {
   padding: 0;
   margin: 0;
