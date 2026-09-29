@@ -50,12 +50,6 @@ npx live-server .
 
 Atau cukup buka `index.html` di browser.
 
-## Kontak
-
-- **Alamat:** Jl. Harapan No. 1, Jakarta
-- **Telepon:** (021) 123-4567
-- **Email:** info@harapankusemua.id
-
 ---
 
 &copy; 2026 Harapanku Semua. Semua hak dilindungi.
